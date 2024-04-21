@@ -44,7 +44,7 @@ jobs:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
         docker push adgomez/docker-graphql:$NEW_VERSION
-        docker push adgomez/docker-graphql:latest .
+        docker push adgomez/docker-graphql:latest
     
     # - name: Build the Docker image
     #   run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
